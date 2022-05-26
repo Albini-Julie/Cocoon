@@ -1,13 +1,15 @@
 <template>
-  <div class="m-5 flex flex-wrap">
+  <div class="m-5 flex flex-wrap justify-between">
     <img src="../../public/logomenu.jpg" alt="logo Cocoon" />
-    <Menu2 class="width[500px] bg-black" />
+    <Menu />
   </div>
 </template>
 
 
 <script>
-import Menu2 from "../components/icons/Menu.vue";
+import Menu from "../components/icons/Menu.vue";
 
-export default { Menu2 };
+export default {
+  components: { Menu },
+};
 </script>
