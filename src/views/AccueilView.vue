@@ -3,7 +3,7 @@
     <HeaderMobile />
   </header>
   <main class="ml-5">
-    <div class="flex">
+    <div class="flex items-center">
       <div class="flex flex-col">
         <img class="w-3/4" src="../../public/moyen-logo.jpg" alt="Cocoon" />
         <h2 class="m- mt-5 font-work-sans text-2xl font-semibold">C’est quoi ?</h2>
@@ -12,7 +12,7 @@
           ont accès depuis chez eux grâce à des casques de réalité virtuelle, à un monde virtuel dans lequel ils peuvent se rencontrer et
           voir le concert qui les intéresse parmi 20 choix dans le monde entier. Chaque soir, 20 nouveaux concerts !
         </p>
-        <bouton texte="En savoir plus" />
+        <bouton class="w-max" texte="En savoir plus" />
         <span class="sr-only">En savoir plus</span>
       </div>
       <img class="m-5 h-2/4 w-2/4" src="../../public/Libre_Droit/joueur2.jpg" alt="joueur" />
@@ -38,11 +38,12 @@
     </div>
 
     <div class="flex justify-center">
-      <h3 class="mt-8 font-work-sans text-3xl font-bold">N'attendez plus et réservez votre place !</h3>
+      <h3 class="mt-8 text-center font-work-sans text-3xl font-bold">N'attendez plus et réservez votre place !</h3>
     </div>
     <p class="mx-20 mt-2 text-center">
       Alors enfilez votre casque de réalité virtuelle, et plongez dans un monde unique pour profiter de vos chanteurs et groupes préférés !
     </p>
+    <footerblanc class="mt-16" />
   </main>
 
   <RouterView />
@@ -51,8 +52,9 @@
 <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
 import bouton from "../components/bouton.vue";
+import footerblanc from "../components/FooterBlanc.vue";
 
 export default {
-  components: { HeaderMobile, bouton },
+  components: { HeaderMobile, bouton, footerblanc },
 };
 </script>
