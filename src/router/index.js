@@ -11,14 +11,14 @@ import ProgrammationView from '../views/ProgrammationView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', name: 'Accueil', component: AccueilView },
-    { path: '/', name: 'Artistes', component: ArtistesView },
-    { path: '/', name: 'Artiste', component: ArtisteView },
-    { path: '/', name: 'Concert', component: ConcertView },
-    { path: '/', name: 'Contact', component: ContactView },
-    { path: '/', name: 'Festival', component: FestivalView },
-    { path: '/', name: 'Mentionslegales', component: MentionslegalesView },
-    { path: '/', name: 'Programmation', component: ProgrammationView },
+    { path: '/Accueil', name: 'Accueil', component: AccueilView },
+    { path: '/Artistes', name: 'Artistes', component: ArtistesView },
+    { path: '/Artiste', name: 'Artiste', component: ArtisteView },
+    { path: '/Concert', name: 'Concert', component: ConcertView },
+    { path: '/Contact', name: 'Contact', component: ContactView },
+    { path: '/Festival', name: 'Festival', component: FestivalView },
+    { path: '/MentionsLegales', name: 'Mentionslegales', component: MentionslegalesView },
+    { path: '/Programmation', name: 'Programmation', component: ProgrammationView },
     // ici les autre routes
   ]
 })
