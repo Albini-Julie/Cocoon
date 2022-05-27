@@ -5,7 +5,7 @@
   <main class="ml-5">
     <div class="flex items-center">
       <div class="flex flex-col">
-        <img class="w-3/4" src="../../public/moyen-logo.jpg" alt="Cocoon" />
+        <img src="../../public/moyen-logo.jpg" alt="Cocoon" />
         <h2 class="m- mt-5 font-work-sans text-2xl font-semibold">C’est quoi ?</h2>
         <p class="mb-8 font-work-sans text-[14px]">
           Cocoon est un festival d’un nouveau genre: dans ce festival il n’y a aucun artiste et aucun visiteur en présentiel. Les visiteurs
