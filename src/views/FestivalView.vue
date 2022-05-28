@@ -77,35 +77,68 @@
     </div>
   </div>
 
-  <div class="relative h-[863px] w-[375px]">
-    <img src="../../public/Libre_Droit/joueuse3.jpg" class="absolute left-[-1px] top-0 h-36 w-[158px] object-cover" /><img
-      src="../../public/Libre_Droit/concert1.jpg"
-      class="absolute left-[157px] top-[51px] h-36 w-[158px] object-cover"
-    /><img src="../../public/Libre_Droit/concert12.jpg" class="absolute left-[157px] top-[-1px] h-[52px] w-[217px] object-cover" /><img
-      src="../../public/Libre_Droit/concert8.jpg"
-      class="absolute left-[315px] top-[51px] h-56 w-[59px] object-none"
-    /><img src="../../public/Libre_Droit/concert7.jpg" class="absolute left-[-1px] top-[143px] h-[124px] w-[79px] object-cover" /><img
-      src="../../public/Libre_Droit/concert4.jpg"
-      class="absolute left-[78px] top-[143px] h-[178px] w-[79px] object-cover"
-    /><img src="../../public/Libre_Droit/joueur.jpg" class="absolute left-[157px] top-[194px] h-[189px] w-[158px] object-none" /><img
-      src="../../public/Libre_Droit/femme.jpg"
-      class="absolute left-[-1px] top-[267px] h-[54px] w-[79px] object-cover"
-    /><img src="../../public/Libre_Droit/concert6.jpg" class="absolute left-[-1px] top-80 h-[158px] w-[158px] object-cover" /><img
-      src="../../public/Libre_Droit/concert5.jpg"
-      class="absolute left-[315px] top-[275px] h-[108px] w-[59px] object-cover"
-    /><img src="../../public/Libre_Droit/concert11.jpg" class="absolute left-[157px] top-[381px] h-[135px] w-[217px] object-cover" /><img
-      src="../../public/Libre_Droit/joueuse2.jpg"
-      class="absolute left-[-1px] top-[478px] h-[97px] w-[158px] object-cover"
-    /><img src="../../public/Libre_Droit/concert3.jpg" class="absolute left-[236px] top-[516px] h-52 w-[138px] object-cover" /><img
-      src="../../public/Libre_Droit/concert9.jpg"
-      class="absolute left-[157px] top-[516px] h-[165px] w-[79px] object-cover"
-    /><img src="../../public/Libre_Droit/platine.jpg" class="absolute left-[-1px] top-[675px] h-[49px] w-[237px] object-cover" /><img
-      src="../../public/Libre_Droit/concert10.jpg"
-      class="absolute left-[-1px] top-[575px] h-[100px] w-[158px] object-cover"
-    /><img src="../../public/Libre_Droit/concert2.jpg" class="absolute left-[-1px] top-[724px] h-[110px] w-[237px] object-none" /><img
-      src="../../public/Libre_Droit/joueur3.jpg"
-      class="absolute left-[236px] top-[721px] h-[141px] w-[138px] object-none"
-    />
+  <div class="grid-auto-flow grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(100px,auto))]">
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/joueuse3.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/concert1.jpg"
+        class="object-cover"
+      />
+    </div>
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/concert12.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/concert8.jpg"
+        class="object-none"
+      />
+    </div>
+
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/concert7.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/concert4.jpg"
+        class="object-cover"
+      />
+    </div>
+
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/joueur.jpg" class="object-none" /><img
+        src="../../public/Libre_Droit/femme.jpg"
+        class="object-cover"
+      />
+    </div>
+
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/concert6.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/concert5.jpg"
+        class="object-cover"
+      />
+    </div>
+
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/concert11.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/joueuse2.jpg"
+        class="object-cover"
+      />
+    </div>
+
+    <div class="flex w-auto flex-col">
+      <img src="../../public/Libre_Droit/concert3.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/concert9.jpg"
+        class="object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <img src="../../public/Libre_Droit/platine.jpg" class="object-cover" /><img
+        src="../../public/Libre_Droit/concert10.jpg"
+        class="object-cover"
+      />
+    </div>
+
+    <div class="flex flex-col">
+      <img src="../../public/Libre_Droit/concert2.jpg" class="object-none" /><img
+        src="../../public/Libre_Droit/joueur3.jpg"
+        class="h-2/4 w-2/4 object-none"
+      />
+    </div>
   </div>
 
   <footerblanc class="mt-16" />
