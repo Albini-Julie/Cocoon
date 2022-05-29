@@ -9,7 +9,6 @@ module.exports = {
         // Ici vos couleurs exportées de Figma
       },
       "fontFamily": {
-        "futura-md-bt": "Futura Md BT",
         "work-sans": "Work Sans"
       },
     },
