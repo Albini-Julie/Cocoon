@@ -1,6 +1,11 @@
 <template>
   <header class="mb-16">
-    <HeaderMobile />
+    <div class="md:hidden">
+      <HeaderMobile />
+    </div>
+    <div class="hidden md:block">
+      <HeaderOrdi />
+    </div>
   </header>
 
   <div class="flex flex-col items-center">
@@ -10,17 +15,19 @@
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">Le concept</h4>
   <div class="flex">
-    <p class="ml-2 font-work-sans text-[14px]">
-      Cocoon est un festival unique qui vous propose une expérience inédite : allez dans un monde virtuel pour voir vos artistes préférés en
-      concert ! Plus besoin de vous déplacer, de trouver du temps pour vous rendre sur le lieu du concert, aujourd’hui c’est le concert qui
-      vient à vous !
-    </p>
+    <div class="flex flex-col">
+      <p class="ml-2 font-work-sans text-[14px]">
+        Cocoon est un festival unique qui vous propose une expérience inédite : allez dans un monde virtuel pour voir vos artistes préférés
+        en concert ! Plus besoin de vous déplacer, de trouver du temps pour vous rendre sur le lieu du concert, aujourd’hui c’est le concert
+        qui vient à vous !
+      </p>
+      <p class="mx-2 mt-5 font-work-sans text-[14px]">
+        Lorsque vous allez dans le festival, vous arrivez dans un univers unique virtuel : créez votre avatar et ayez à votre disposition :
+        boutiques, salons de discussion, rediffusions et bien sûr des concerts ! Chaque jour, 20 nouveaux concerts du monde entier !
+      </p>
+    </div>
     <img class="ml-5 h-1/4 w-2/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
   </div>
-  <p class="mx-2 mt-5 font-work-sans text-[14px]">
-    Lorsque vous allez dans le festival, vous arrivez dans un univers unique virtuel : créez votre avatar et ayez à votre disposition :
-    boutiques, salons de discussion, rediffusions et bien sûr des concerts ! Chaque jour, 20 nouveaux concerts du monde entier !
-  </p>
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
   <div class="mt-5 flex items-center">
@@ -33,11 +40,12 @@
       <p class="mr-2 font-work-sans text-[14px]">
         Cocoon a donc voulu permettre de mettre en lien les artistes et leur public dans un monde à part pour les faire se retrouver.
       </p>
+      <p class="mx-2 mt-5 font-work-sans text-[14px]">
+        Suite à l’engouement du public pour la première édition du concept de Cocoon, le projet a continué d’évoluer avec une édition 2,
+        puis 3.
+      </p>
     </div>
   </div>
-  <p class="mx-2 mt-5 font-work-sans text-[14px]">
-    Suite à l’engouement du public pour la première édition du concept de Cocoon, le projet a continué d’évoluer avec une édition 2, puis 3.
-  </p>
 
   <h3 class="mx-2 mt-5 text-center font-work-sans text-3xl font-semibold">Les avantages de Cocoon</h3>
   <div class="ml-[5rem] mt-5 flex items-center">
@@ -141,7 +149,7 @@
     </div>
   </div>
 
-  <footerblanc class="mt-16" />
+  <Footer class="mt-16" />
 </template>
 
 
@@ -150,14 +158,16 @@
 
   <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
-import card from "../components/card.vue";
-import footerblanc from "../components/FooterBlanc.vue";
+import card from "../components/cardConcert.vue";
+import Footer from "../components/Footer.vue";
+import HeaderOrdi from "../components/HeaderOrdi.vue";
 
 export default {
   components: {
     HeaderMobile,
     card,
-    footerblanc,
+    Footer,
+    HeaderOrdi,
   },
 };
 </script>

@@ -1,6 +1,11 @@
 <template>
   <header class="mb-16">
-    <HeaderMobile />
+    <div class="md:hidden">
+      <HeaderMobile />
+    </div>
+    <div class="hidden md:block">
+      <HeaderOrdi />
+    </div>
   </header>
 
   <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold">Découvrez un festival d’un nouveau genre :</h3>
@@ -130,18 +135,20 @@
     interactions avec ces contenus embarqués si vous disposez d’un compte connecté sur leur site web.
   </p>
 
-  <FooterBlanc class="mt-16" />
+  <Footer class="mt-16" />
 </template>
 
 
 <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
-import FooterBlanc from "../components/FooterBlanc.vue";
+import Footer from "../components/Footer.vue";
+import HeaderOrdi from "../components/HeaderOrdi.vue";
 
 export default {
   components: {
     HeaderMobile,
-    FooterBlanc,
+    Footer,
+    HeaderOrdi,
   },
 };
 </script>

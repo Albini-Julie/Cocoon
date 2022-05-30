@@ -1,6 +1,11 @@
 <template>
   <main class="-mt-5 bg-gray-900">
-    <HeaderNoir class="mb-16 pt-5" />
+    <header class="mb-16">
+      <div class="md:hidden"><Header /></div>
+      <div class="hidden md:block">
+        <HeaderOrdi />
+      </div>
+    </header>
 
     <div class="flex flex-col items-center">
       <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold text-white">Orelsan au festival Cocoon !</h3>
@@ -56,18 +61,20 @@
       </div>
     </div>
 
-    <footerNoir class="mt-16" />
+    <Footer class="mt-16" />
   </main>
 </template>
 
 <script>
-import HeaderNoir from "../components/HeaderMobile_noir.vue";
-import footerNoir from "../components/FooterNoir.vue";
+import Header from "../components/HeaderMobile.vue";
+import Footer from "../components/Footer.vue";
+import HeaderOrdi from "../components/HeaderOrdi.vue";
 
 export default {
   components: {
-    HeaderNoir,
-    footerNoir,
+    Header,
+    Footer,
+    HeaderOrdi,
   },
 };
 </script>

@@ -1,6 +1,11 @@
 <template>
   <header class="mb-16">
-    <HeaderMobile />
+    <div class="md:hidden">
+      <HeaderMobile />
+    </div>
+    <div class="hidden md:block">
+      <HeaderOrdi />
+    </div>
   </header>
 
   <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold">Qu’est ce qu’il y a au programme ?</h3>
@@ -61,19 +66,21 @@ virtuelle ! "
     presentation="Pour sa première participation, Vald va nous proposer un concert puissant et énergique comme à son habitude ! Il pourrait bien se joindre à la surprise de Orelsan..."
   />
 
-  <footerblanc class="mt-16" />
+  <Footer class="mt-16" />
 </template>
 
 <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
-import card from "../components/card.vue";
-import footerblanc from "../components/FooterBlanc.vue";
+import card from "../components/cardConcert.vue";
+import Footer from "../components/Footer.vue";
+import HeaderOrdi from "../components/HeaderOrdi.vue";
 
 export default {
   components: {
     HeaderMobile,
     card,
-    footerblanc,
+    Footer,
+    HeaderOrdi,
   },
 };
 </script>

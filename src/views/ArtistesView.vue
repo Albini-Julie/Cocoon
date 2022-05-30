@@ -1,8 +1,12 @@
 <template>
   <header class="mb-16">
-    <HeaderMobile />
+    <div class="md:hidden">
+      <HeaderMobile />
+    </div>
+    <div class="hidden md:block">
+      <HeaderOrdi />
+    </div>
   </header>
-
   <h3 class="text-center font-work-sans text-3xl font-semibold">Qui sont les invités ?</h3>
   <p class="mt-5 text-center font-work-sans text-[14px]">
     Plusieurs artistes nous ont fait l’honneur de venir pour cette nouvelle édition de Cocoon ! Première participation ou habitués,
@@ -59,19 +63,21 @@
     presentation="Ce groupe de rock alternatif et rock électronique français a été fondé en 2002. Composé de 7 membres, ce groupe aime mélanger plusieurs styles musicaux pour ses créations."
   />
 
-  <footerblanc class="mt-16" />
+  <Footer class="mt-16" />
 </template>
 
 <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
-import card from "../components/card.vue";
-import footerblanc from "../components/FooterBlanc.vue";
+import card from "../components/cardArtiste.vue";
+import Footer from "../components/Footer.vue";
+import HeaderOrdi from "../components/HeaderOrdi.vue";
 
 export default {
   components: {
     HeaderMobile,
     card,
-    footerblanc,
+    Footer,
+    HeaderOrdi,
   },
 };
 </script>

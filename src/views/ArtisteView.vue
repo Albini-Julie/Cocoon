@@ -1,6 +1,11 @@
 <template>
   <main class="-mt-5 bg-gray-900">
-    <HeaderNoir class="mb-16 pt-5" />
+    <header class="mb-16">
+      <div class="md:hidden"><Header /></div>
+      <div class="hidden md:block">
+        <HeaderOrdi />
+      </div>
+    </header>
 
     <div class="flex flex-col items-center">
       <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold text-white">Zoom sur :</h3>
@@ -19,9 +24,9 @@
         </p>
         <div class="flex flex-col items-center">
           <div class="mt-5 flex flex-wrap gap-5">
-            <InstaBlanc />
-            <FacebookBlanc />
-            <TwitterBlanc />
+            <a href="https://www.instagram.com/"><InstaBlanc /></a>
+            <a href="https://www.facebook.com/"><FacebookBlanc /></a>
+            <a href="https://twitter.com/?lang=fr"><TwitterBlanc /></a>
           </div>
         </div>
       </div>
@@ -110,24 +115,26 @@
       </div>
     </div>
 
-    <FooterNoir class="mt-16" />
+    <Footer class="mt-16" />
   </main>
 </template>
 
 <script>
-import HeaderNoir from "../components/HeaderMobile_noir.vue";
+import Header from "../components/HeaderMobile.vue";
 import InstaBlanc from "../components/icons/logoInsta_blanc.vue";
 import FacebookBlanc from "../components/icons/logoFacebook_blanc.vue";
 import TwitterBlanc from "../components/icons/logoTwitter_blanc.vue";
-import FooterNoir from "../components/FooterNoir.vue";
+import Footer from "../components/Footer.vue";
+import HeaderOrdi from "../components/HeaderOrdi.vue";
 
 export default {
   components: {
-    HeaderNoir,
+    Header,
     InstaBlanc,
     FacebookBlanc,
     TwitterBlanc,
-    FooterNoir,
+    Footer,
+    HeaderOrdi,
   },
 };
 </script>
