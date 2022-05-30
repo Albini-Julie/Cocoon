@@ -9,15 +9,15 @@
       <logoFacebook />
       <logoTwitter />
     </div>
-    <bouton-blanc class="mt-10" texte="En savoir plus" />
+    <router-link to="/Concert" class="block"><bouton-blanc class="mt-10 w-max">En savoir plus</bouton-blanc></router-link>
   </div>
 </template>
 
 <script>
-import logoInsta from "../components/icons/logoInsta.vue";
-import logoFacebook from "../components/icons/logoFacebook.vue";
-import logoTwitter from "../components/icons/logoTwitter.vue";
-import BoutonBlanc from "../components/bouton_blanc.vue";
+import logoInsta from "./icons/logoInsta.vue";
+import logoFacebook from "./icons/logoFacebook.vue";
+import logoTwitter from "./icons/logoTwitter.vue";
+import BoutonBlanc from "./bouton_blanc.vue";
 
 export default {
   components: {
