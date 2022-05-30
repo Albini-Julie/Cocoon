@@ -14,6 +14,44 @@
   </p>
   <img class="mt-10" src="../../public/artistes_solos.jpg" alt="artistes solos" />
 
+  <div class="card bg-dark">
+    <div class="card-header">
+      <h4 class="my-8 text-center font-work-sans text-2xl font-bold">
+        Liste des artistes présents lors de Cocoon
+        <span class="float-right" title="Créer un nouvel artiste">
+          <router-link to="/createArtiste">
+            <i class="fa fa-plus fa-lg text-light"></i>
+          </router-link>
+        </span>
+      </h4>
+    </div>
+
+    <div class="card-body table-responsive">
+      <table class="text-light table">
+        <thead>
+          <tr>
+            <th scope="col" class="w-1/4">Image</th>
+            <th scope="col" class="1/4">Surnom</th>
+            <th scope="col" class="1/4">Date de Naissance</th>
+            <th scope="col" class="1/4">Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="art in listeArtistes" :key="art.id">
+            <td>
+              <img class="media-object imageSmall" :src="art.photo" :alt="art.surnom + ' ' + art.date_naissance + ' ' + art.type" />
+            </td>
+            <td class="text-center">
+              {{ art.surnom }}
+            </td>
+            <td class="text-center">{{ art.date_naissance }}</td>
+            <td class="text-center">{{ art.type }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <card
     image="/public/AmelBent/AmelBent_artiste.webp"
     titre="Amel Bent"
@@ -72,12 +110,69 @@ import card from "../components/cardArtiste.vue";
 import Footer from "../components/Footer.vue";
 import HeaderOrdi from "../components/HeaderOrdi.vue";
 
+import {
+  getFirestore, // Obtenir le Firestore
+  collection, // Utiliser une collection de documents
+  onSnapshot, // Demander une liste de documents d'une collection, en les synchronisant
+  query, // Permet d'effectuer des requêtes sur Firestore
+  orderBy, // Permet de demander le tri d'une requête query
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
+// Cloud Storage : import des fonctions
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+
 export default {
   components: {
     HeaderMobile,
     card,
     Footer,
     HeaderOrdi,
+  },
+  data() {
+    return {
+      listeArtistes: [],
+    };
+  },
+  mounted() {
+    debugger;
+    const local = this;
+    this.getArtistes(local);
+  },
+  methods: {
+    async getArtistes(local) {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbPart = collection(firestore, "Artiste");
+      // Liste des participants triés sur leur nom
+      const q = query(dbPart, orderBy("surnom", "asc"));
+      await onSnapshot(q, (snapshot) => {
+        local.listeArtistes = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        console.log(local.listeArtistes);
+        // Récupération des images de chaque participant
+        // parcours de la liste
+        this.listeArtistes.forEach(function (personne) {
+          // Obtenir le Cloud Storage
+          const storage = getStorage();
+          // Récupération de l'image par son nom de fichier
+          const spaceRef = ref(storage, "ImgArtiste/" + personne.image);
+          // Récupération de l'url complète de l'image
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              // On remplace le nom du fichier
+              // Par l'url complète de la photo
+              personne.photo = url;
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+      });
+    },
   },
 };
 </script>
