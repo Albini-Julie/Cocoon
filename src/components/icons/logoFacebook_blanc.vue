@@ -5,7 +5,7 @@
     viewBox="0 0 24 25"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    class="relative h-6 w-6"
+    class=" h-6 w-6"
     preserveAspectRatio="none"
   >
     <path
