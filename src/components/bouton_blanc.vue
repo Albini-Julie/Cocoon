@@ -1,6 +1,6 @@
 <template>
   <div class="flex gap-2 rounded-lg border-2 border-blue-700 bg-white p-5">
-    <router-link class="font-work-sans font-semibold text-blue-700" to="Festival">{{ texte }}</router-link>
+    <span class="font-work-sans font-semibold text-blue-700"><slot /></span>
     <flechedroiteBleu />
   </div>
 </template>
