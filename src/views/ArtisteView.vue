@@ -13,7 +13,7 @@
     </div>
 
     <div class="flex items-center">
-      <div class="flex w-2/4 flex-col">
+      <div class="flex h-2/4 w-2/4 flex-col">
         <h4 class="ml-2 font-work-sans text-[20px] font-semibold text-white">Présentation</h4>
         <p class="ml-2 font-work-sans text-white">
           Angèle est une autrice, compositrice, interprète, productrice, actrice et mannequin belge. De son vrai nom Angèle Van Laeken, la
@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="m-auto flex w-2/4 flex-col items-center">
+      <div class="m-auto flex h-2/4 w-2/4 flex-col items-center">
         <img src="../../public/Angèle/bulle1.png" alt="concert Angèle" />
         <div class="flex">
           <img class="w-2/4" src="../../public/Angèle/bulle2.png" alt="Angèle" />
