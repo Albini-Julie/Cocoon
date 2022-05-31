@@ -2,11 +2,11 @@
   <div class="flex flex-col items-center">
     <img
       v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'"
-      class="w-2/4"
+      class="w-1/4"
       src="../../public/grandlogo_blanc.svg"
       alt="image logo Cocoon"
     />
-    <img v-else class="w-2/4" src="../../public/grand-logo.svg" alt="image logo Cocoon" />
+    <img v-else class="w-1/4" src="../../public/grand-logo.svg" alt="image logo Cocoon" />
     <div class="mt-12 flex flex-wrap gap-20">
       <logoInstaBlanc v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'" />
       <logoInsta v-else />
