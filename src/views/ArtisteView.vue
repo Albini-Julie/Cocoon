@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="m-auto flex w-auto flex-col items-center">
+      <div class="m-auto flex w-2/4 flex-col items-center">
         <img src="../../public/Angèle/bulle1.png" alt="concert Angèle" />
         <div class="flex">
           <img class="w-2/4" src="../../public/Angèle/bulle2.png" alt="Angèle" />
@@ -41,7 +41,7 @@
 
     <div class="mt-10 flex items-center">
       <img class="h-1/4 w-1/4" src="../../public/Angèle/Angele_RomeoElvis.jpg" alt="Angèle et Roméo Elvis" />
-      <p class="m-5 m-auto w-2/4 font-work-sans text-white">
+      <p class="m-auto w-2/4 font-work-sans text-white">
         Elle entame de 2018 à 2020 une tournée pour son album Briol, ce qui lui rapportera la Victoire de la musique du concert de l’année
         en 2020. Elle sort ensuite en 2021 un nouvel album : Nonante-cinq. Elle a également un frère, Roméo Elvis, avec qui elle est très
         proche. Elle a fait de nombreux feat, avec Dua Lipa et Damso notamment.
@@ -51,7 +51,7 @@
     <div class="mt-10 mb-2 flex flex-col items-center">
       <h4 class="ml-2 font-work-sans text-[20px] font-semibold text-white">Une artiste engagée</h4>
     </div>
-    <p class="ml-2 font-work-sans text-white">
+    <p class="mx-5 font-work-sans text-white">
       Dans beaucoup de ses chansons, Angèle a mis en avant la cause féministe qui lui tient énormément à coeur. C’est particulièrement le
       cas dans son titre Balance ton quoi, dans lequel elle défend les femmes et met en avant les réflexions, la pression sociale et les
       inégalités subies par les femmes au quotidien dans notre société. En dehors de ses titres, Angèle s’allie au mouvement Noustoutes, qui
@@ -60,7 +60,7 @@
     <br />
     <div class="flex items-center">
       <div class="w-7/10 flex flex-col">
-        <p class="ml-2 font-work-sans text-white">
+        <p class="m-5 font-work-sans text-white">
           C’est la cause LGBT qu’elle soutient cette fois dans la chanson Ta reine. En effet, en tant que bisexuelle, Angèle est très
           engagée dans cette cause qui lui tient également très à coeur.
         </p>
