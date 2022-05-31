@@ -43,7 +43,7 @@
   <img class="mt-10" src="../../public/musique_rock.svg" alt="musique rock" />
 
   <card
-    image="../../public/Indochine/Indochine.jpg"
+    image="../public/Indochine/Indochine.jpg"
     titre="Concert : Indochine"
     genre="Rock"
     presentation="Venez découvrir Indochine lors de leur concert dans le festival Cocoon ! De leurs nouvelles musiques à leurs sons mythiques revivez les sensations qui vous ont fait vibrer !"
