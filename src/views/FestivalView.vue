@@ -10,7 +10,7 @@
 
   <div class="flex flex-col items-center">
     <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold">Découvrez un festival d’un nouveau genre :</h3>
-    <img class="mt-5 w-2/4" src="../../public/grand-logo.png" alt="logo Cocoon" />
+    <img class="mt-5 w-2/4" src="../../public/grand-logo.svg" alt="logo Cocoon" />
   </div>
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">Le concept</h4>

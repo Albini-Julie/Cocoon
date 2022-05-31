@@ -9,10 +9,38 @@
   </header>
 
   <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold">Qu’est ce qu’il y a au programme ?</h3>
-  <p class="mt-5 text-center font-work-sans text-[14px]">
+  <p class="my-5 text-center font-work-sans text-[14px]">
     Découvrez la liste exhaustive de tous les concerts aux programmes de l’édition 2022 de Cocoon et réservez votre place !
   </p>
-  <img class="mt-10" src="../../public/musique_rock.jpg" alt="musique rock" />
+
+  <h4 class="my-8 text-center font-work-sans text-2xl font-bold">Liste des concerts de Cocoon</h4>
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col" class="w-1/4">Image</th>
+          <th scope="col" class="1/4">Artiste</th>
+          <th scope="col" class="1/4">Date</th>
+          <th scope="col" class="1/4">Genre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="conc in listeConcerts" :key="conc.id">
+          <td>
+            <img class="media-object imageSmall" :src="conc.photo" :alt="conc.artiste + ' ' + conc.date + ' ' + conc.type" />
+          </td>
+          <td class="text-center">
+            {{ conc.artiste }}
+          </td>
+          <td class="text-center">{{ conc.date }}</td>
+          <td class="text-center">{{ conc.type }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <img class="mt-10" src="../../public/musique_rock.svg" alt="musique rock" />
 
   <card
     image="/public/Indochine/Indochine.jpg"
@@ -30,7 +58,7 @@
 virtuelle ! "
   />
 
-  <img class="mt-10" src="../../public/musique_pop.jpg" alt="musique pop" />
+  <img class="mt-10" src="../../public/musique_pop.svg" alt="musique pop" />
 
   <card
     class="mt-12"
@@ -48,7 +76,7 @@ virtuelle ! "
     presentation="Angèle nous fait l’honneur de revenir pour l’édition 2022 de Cocoon ! Venez découvrir l’univers merveilleux d’Angèle mélangé à la réalité virtuelle !"
   />
 
-  <img class="mt-10" src="../../public/musique_rap.jpg" alt="musique rap" />
+  <img class="mt-10" src="../../public/musique_rap.svg" alt="musique rap" />
 
   <card
     class="mt-12"
@@ -75,12 +103,68 @@ import card from "../components/cardConcert.vue";
 import Footer from "../components/Footer.vue";
 import HeaderOrdi from "../components/HeaderOrdi.vue";
 
+import {
+  getFirestore, // Obtenir le Firestore
+  collection, // Utiliser une collection de documents
+  onSnapshot, // Demander une liste de documents d'une collection, en les synchronisant
+  query, // Permet d'effectuer des requêtes sur Firestore
+  orderBy, // Permet de demander le tri d'une requête query
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
+
+// Cloud Storage : import des fonctions
+import {
+  getStorage, // Obtenir le Cloud Storage
+  ref, // Pour créer une référence à un fichier à uploader
+  getDownloadURL, // Permet de récupérer l'adress complète d'un fichier du Storage
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js";
+
 export default {
   components: {
     HeaderMobile,
     card,
     Footer,
     HeaderOrdi,
+  },
+  data() {
+    return {
+      listeConcerts: [],
+    };
+  },
+  mounted() {
+    const local = this;
+    this.getConcerts(local);
+  },
+  methods: {
+    async getConcerts(local) {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbPart = collection(firestore, "Concert");
+      // Liste des participants triés sur leur nom
+      const q = query(dbPart, orderBy("artiste", "asc"));
+      await onSnapshot(q, (snapshot) => {
+        local.listeConcerts = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+        console.log(local.listeConcerts);
+        // Récupération des images de chaque participant
+        // parcours de la liste
+        this.listeConcerts.forEach(function (concert) {
+          // Obtenir le Cloud Storage
+          const storage = getStorage();
+          // Récupération de l'image par son nom de fichier
+          const spaceRef = ref(storage, "ImgConcert/" + concert.image);
+          // Récupération de l'url complète de l'image
+          getDownloadURL(spaceRef)
+            .then((url) => {
+              // On remplace le nom du fichier
+              // Par l'url complète de la photo
+              concert.photo = url;
+            })
+            .catch((error) => {
+              console.log("erreur downloadUrl", error);
+            });
+        });
+      });
+    },
   },
 };
 </script>

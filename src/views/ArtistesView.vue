@@ -12,7 +12,6 @@
     Plusieurs artistes nous ont fait l’honneur de venir pour cette nouvelle édition de Cocoon ! Première participation ou habitués,
     n’hésitez pas à cliquez sur les liens pour en apprendre plus !
   </p>
-  <img class="mt-10" src="../../public/artistes_solos.jpg" alt="artistes solos" />
 
   <div class="card bg-dark">
     <div class="card-header">
@@ -26,8 +25,8 @@
       </h4>
     </div>
 
-    <div class="card-body table-responsive">
-      <table class="text-light table">
+    <div>
+      <table>
         <thead>
           <tr>
             <th scope="col" class="w-1/4">Image</th>
@@ -52,6 +51,7 @@
     </div>
   </div>
 
+  <img class="mt-10" src="../../public/artistes_solos.svg" alt="artistes solos" />
   <card
     image="/public/AmelBent/AmelBent_artiste.webp"
     titre="Amel Bent"
@@ -83,7 +83,7 @@
     presentation="Orelsan est un chanteur, rappeur et compositeur français de 39 ans qui a marqué sans aucun doute le rap français. Il se distingue par son originalité et sa capacité à nous faire réfléchir dans ses musiques."
   />
 
-  <img class="mt-10" src="../../public/artistes_groupes.jpg" alt="artistes groupe" />
+  <img class="mt-10" src="../../public/artistes_groupes.svg" alt="artistes groupe" />
 
   <card
     class="mt-12"
@@ -138,7 +138,6 @@ export default {
     };
   },
   mounted() {
-    debugger;
     const local = this;
     this.getArtistes(local);
   },
