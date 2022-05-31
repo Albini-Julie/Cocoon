@@ -3,7 +3,7 @@
     <router-link to="/">
       <img
         v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'"
-        src="../../public/LogoSimpleGrandBlanc.svg.svg"
+        src="../../public/LogoSimpleGrandBlanc.svg"
         alt="logo Cocoon" />
       <img v-else src="../../public/LogoSimpleGrandNoir.svg" alt="logo Cocoon"
     /></router-link>
