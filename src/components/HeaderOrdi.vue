@@ -2,7 +2,7 @@
   <div class="m-5 flex items-center gap-10">
     <router-link to="/">
       <img
-        v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'"
+        v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
         src="../../public/LogoSimpleGrandBlanc.svg"
         alt="logo Cocoon" />
       <img v-else src="../../public/LogoSimpleGrandNoir.svg" alt="logo Cocoon"
@@ -11,22 +11,30 @@
       <div class="flex gap-10">
         <div class="flex gap-2">
           <li><router-link to="/Programmation">Programmation</router-link></li>
-          <chevronBlanc v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'" />
+          <chevronBlanc
+            v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
+          />
           <chevron v-else />
         </div>
         <div class="flex gap-2">
           <li><router-link to="/Artistes">Artistes</router-link></li>
-          <chevronBlanc v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'" />
+          <chevronBlanc
+            v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
+          />
           <chevron v-else />
         </div>
         <div class="flex gap-2">
           <li><router-link to="/Festival">Festival</router-link></li>
-          <chevronBlanc v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'" />
+          <chevronBlanc
+            v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
+          />
           <chevron v-else />
         </div>
         <div class="flex gap-2">
           <li><router-link to="/Contact">Contact</router-link></li>
-          <chevronBlanc v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'" />
+          <chevronBlanc
+            v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
+          />
           <chevron v-else />
         </div>
       </div>

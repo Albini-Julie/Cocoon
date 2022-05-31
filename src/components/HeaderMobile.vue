@@ -2,13 +2,16 @@
   <div class="m-5 flex flex-wrap justify-between">
     <router-link to="/">
       <img
-        v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'"
+        v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
         src="../../public/logomenu_blanc.svg"
         alt="logo Cocoon" />
       <img v-else src="../../public/logomenu.svg" alt="logo Cocoon"
     /></router-link>
     <button class="relative z-50" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
-      <MenuBlanc v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'" class="mx-5" />
+      <MenuBlanc
+        v-if="$route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'"
+        class="mx-5"
+      />
       <Menu v-else class="mx-5" />
       <span class="sr-only">Menu</span>
     </button>
@@ -17,7 +20,7 @@
   <div
     class="fixed inset-0 translate-x-full motion-safe:transition-transform motion-safe:duration-1000"
     :class="[
-      $route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact'
+      $route.name === 'Artiste' || $route.name === 'Concert' || $route.name === 'Contact' || $route.name === 'CreateArtiste'
         ? 'bg-gray-900 text-white'
         : 'bg-white text-black',
       menuOuvert ? 'translate-x-0' : '',
