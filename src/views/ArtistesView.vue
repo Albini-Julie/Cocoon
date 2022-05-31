@@ -28,10 +28,11 @@
     <table>
       <thead>
         <tr>
-          <th scope="col" class="w-1/4">Image</th>
-          <th scope="col" class="1/4">Surnom</th>
-          <th scope="col" class="1/4">Date de Naissance</th>
-          <th scope="col" class="1/4">Genre</th>
+          <th scope="col" class="w-1/5">Image</th>
+          <th scope="col" class="w-1/5">Surnom</th>
+          <th scope="col" class="w-1/5">Date de Naissance</th>
+          <th scope="col" class="w-1/5">Genre</th>
+          <th scope="col" class="w-1/5">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -44,6 +45,23 @@
           </td>
           <td class="text-center">{{ art.date_naissance }}</td>
           <td class="text-center">{{ art.type }}</td>
+          <td class="flex items-center justify-center">
+            <span title="Modifier l'artiste" class="mr-2">
+              <!-- Pour passer un paramètre dans la navigation :
+                                On utilise le nom de la route
+                                l'attribut params, permet de préciser le nom du paramètre (id) 
+                                et sa valeur (part.id, id du participant) 
+                                -->
+              <RouterLink :to="{ name: 'UpdateArtiste', params: { id: art.id } }">
+                <crayon />
+              </RouterLink>
+            </span>
+            <span title="Supprimer le participant" class="mr-2">
+              <RouterLink :to="{ name: 'DeleteArtiste', params: { id: art.id } }">
+                <Poubelle />
+              </RouterLink>
+            </span>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -108,6 +126,8 @@ import card from "../components/cardArtiste.vue";
 import Footer from "../components/Footer.vue";
 import HeaderOrdi from "../components/HeaderOrdi.vue";
 import Plus from "../components/icons/plus.vue";
+import Poubelle from "../components/icons/poubelle.vue";
+import crayon from "../components/icons/crayon.vue";
 
 import {
   getFirestore, // Obtenir le Firestore
@@ -131,6 +151,8 @@ export default {
     Footer,
     HeaderOrdi,
     Plus,
+    Poubelle,
+    crayon,
   },
   data() {
     return {
