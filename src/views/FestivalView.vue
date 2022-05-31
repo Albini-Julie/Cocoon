@@ -10,11 +10,11 @@
 
   <div class="flex flex-col items-center">
     <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold">Découvrez un festival d’un nouveau genre :</h3>
-    <img class="mt-5 w-2/4" src="../../public/grand-logo.svg" alt="logo Cocoon" />
+    <img class="mt-10 w-2/4" src="../../public/grand-logo.svg" alt="logo Cocoon" />
   </div>
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">Le concept</h4>
-  <div class="flex">
+  <div class="mx-5 flex items-center">
     <div class="flex flex-col">
       <p class="ml-2 font-work-sans">
         Cocoon est un festival unique qui vous propose une expérience inédite : allez dans un monde virtuel pour voir vos artistes préférés
@@ -30,7 +30,7 @@
   </div>
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
-  <div class="mt-5 flex items-center">
+  <div class="mx-5 mt-5 flex items-center">
     <img class="mr-5 h-1/4 w-1/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
     <div class="flex flex-col">
       <p class="mr-2 font-work-sans">
@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <div class="mt-5 flex items-center">
+  <div class="m-32 mt-5 flex items-center">
     <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
     <div class="flex flex-col">
       <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
