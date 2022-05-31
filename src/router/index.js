@@ -7,6 +7,7 @@ import ContactView from '../views/ContactView.vue'
 import FestivalView from '../views/FestivalView.vue'
 import MentionslegalesView from '../views/MentionslegalesView.vue'
 import ProgrammationView from '../views/ProgrammationView.vue'
+import GuideStyleView from "../views/GuideStyle.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,8 @@ const router = createRouter({
     { path: '/Festival', name: 'Festival', component: FestivalView },
     { path: '/MentionsLegales', name: 'Mentionslegales', component: MentionslegalesView },
     { path: '/Programmation', name: 'Programmation', component: ProgrammationView },
+    { path: '/GuideStyle', name: 'GuideStyle', component: GuideStyleView },
+    
     // ici les autre routes
   ]
 })
