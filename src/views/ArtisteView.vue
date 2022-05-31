@@ -30,7 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="flex w-2/4 flex-col items-center">
+      <div class="flex w-auto flex-col items-center">
         <img src="../../public/Angèle/bulle1.png" alt="concert Angèle" />
         <div class="flex">
           <img class="w-2/4" src="../../public/Angèle/bulle2.png" alt="Angèle" />
@@ -40,8 +40,8 @@
     </div>
 
     <div class="mt-10 flex items-center">
-      <img class="w-2/4" src="../../public/Angèle/Angele_RomeoElvis.jpg" alt="Angèle et Roméo Elvis" />
-      <p class="ml-2 w-2/4 font-work-sans text-white">
+      <img class="h-1/4 w-1/4" src="../../public/Angèle/Angele_RomeoElvis.jpg" alt="Angèle et Roméo Elvis" />
+      <p class="m-5 w-2/4 font-work-sans text-white">
         Elle entame de 2018 à 2020 une tournée pour son album Briol, ce qui lui rapportera la Victoire de la musique du concert de l’année
         en 2020. Elle sort ensuite en 2021 un nouvel album : Nonante-cinq. Elle a également un frère, Roméo Elvis, avec qui elle est très
         proche. Elle a fait de nombreux feat, avec Dua Lipa et Damso notamment.
@@ -69,7 +69,7 @@
           réchauffement climatique appelée Il sera trop tard.
         </p>
       </div>
-      <img class="w-3/10" src="../../public/Angèle/Angele_lgbt.jpg" alt="Angèle concert" />
+      <img class="h-1/4 w-1/4" src="../../public/Angèle/Angele_lgbt.jpg" alt="Angèle concert" />
     </div>
 
     <h4 class="my-10 ml-2 text-center font-work-sans font-semibold text-white">
