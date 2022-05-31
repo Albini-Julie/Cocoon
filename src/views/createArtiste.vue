@@ -48,7 +48,7 @@
                 <br />
                 <div>
                   <div class="font-work-sans text-[20px] font-semibold text-white">
-                    <span class="input-group-text">Photo</span>
+                    <span>Photo</span>
                   </div>
                   <input
                     class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
@@ -64,7 +64,7 @@
                     <span class="font-work-sans text-[20px] font-semibold text-white">Genre</span>
                   </div>
                   <input
-                    class="form-control form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                    class="border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
                     v-model="artiste.type"
                     placeholder="Genre de musique"
                     required
@@ -125,7 +125,6 @@ export default {
   data() {
     return {
       imageData: null,
-      listePays: [],
       artiste: {
         surnom: null,
         date_naissance: null,
