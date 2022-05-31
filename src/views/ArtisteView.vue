@@ -2,7 +2,7 @@
   <main class="-mt-5 bg-gray-900">
     <header class="mb-16">
       <div class="md:hidden"><Header /></div>
-      <div class="hidden md:block w-2/4">
+      <div class="hidden md:block w-2/4 h-2/4">
         <HeaderOrdi />
       </div>
     </header>

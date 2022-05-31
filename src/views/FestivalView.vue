@@ -3,7 +3,7 @@
     <div class="md:hidden">
       <HeaderMobile />
     </div>
-    <div class="hidden md:block w-2/4">
+    <div class="hidden h-2/4 w-2/4 md:block">
       <HeaderOrdi />
     </div>
   </header>
@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <div class="m-auto mt-5 flex items-center">
+  <div class="m-20 mt-5 flex items-center">
     <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
     <div class="flex flex-col">
       <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
