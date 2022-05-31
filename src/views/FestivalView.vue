@@ -26,7 +26,7 @@
         boutiques, salons de discussion, rediffusions et bien sûr des concerts ! Chaque jour, 20 nouveaux concerts du monde entier !
       </p>
     </div>
-    <img class="w-/4 ml-5 h-1/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
+    <img class="ml-5 h-1/4 w-1/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
   </div>
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
@@ -48,8 +48,8 @@
   </div>
 
   <h3 class="mx-2 mt-5 text-center font-work-sans text-3xl font-semibold">Les avantages de Cocoon</h3>
-  <div class="flex flex-col items-center">
-    <div class="ml-[5rem] mt-5 flex items-center">
+  <div class="mx-2 flex flex-col items-center">
+    <div class="mt-5 flex items-center">
       <img class="mr-2" src="../../public/numero1.jpg" alt="numéro 1" />
       <div class="flex flex-col">
         <h4 class="work-sans ml-2 text-xl font-bold">Économie</h4>
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div class="mr-[5rem] mt-5 flex items-center">
+    <div class="mt-5 flex items-center">
       <div class="flex flex-col">
         <h4 class="work-sans ml-2 mb-5 text-xl font-bold">Gain de temps</h4>
         <div class="flex flex-col">
@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <div class="ml-[5rem] mt-5 flex items-center">
+  <div class="mt-5 flex items-center">
     <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
     <div class="flex flex-col">
       <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
