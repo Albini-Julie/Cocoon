@@ -18,13 +18,13 @@
     <div class="flex">
       <img class="w-2/4" src="../../public/Orelsan/img1_PageConcert.jpg" alt="Orelsan" />
       <div class="flex w-2/4 flex-wrap items-center justify-center">
-        <p class="font-work-sans text-lg text-white">28 mai 2022</p>
+        <p class="font-work-sans text-[28px] text-white">28 mai 2022</p>
       </div>
     </div>
 
     <div class="flex">
       <div class="flex w-2/4 flex-wrap items-center justify-center">
-        <p class="text-center font-work-sans text-lg text-white">20h30 - Scène 3D</p>
+        <p class="text-center font-work-sans text-[28px] text-white">20h30 - Scène 3D</p>
       </div>
       <img class="w-2/4" src="../../public/Orelsan/img2_PageConcert.jpg" alt="Orelsan" />
     </div>
