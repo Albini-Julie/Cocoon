@@ -9,7 +9,7 @@
 
     <div class="flex flex-col items-center">
       <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold text-white">N’hésitez pas à nous contacter !</h3>
-      <p class="mt-5 mb-10 text-center font-work-sans text-[14px] text-white">
+      <p class="mt-5 mb-10 text-center font-work-sans text-white">
         Envoyez-nous un petit message pour partager votre expérience, nous faire part de vos idées ou nous soutenir cela nous fera très
         plaisir !
       </p>
@@ -36,7 +36,7 @@
           </div>
           <div class="ml-5 flex items-center gap-2">
             <input type="checkbox" id="checkbox" />
-            <p class="font-work-sans text-[14px] text-white">
+            <p class="font-work-sans text-white">
               En cochant cette case, vous acceptez la transmission des données entrées dans ce formulaire.
             </p>
           </div>

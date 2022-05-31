@@ -9,7 +9,7 @@
 
     <div class="flex flex-col items-center">
       <h3 class="mx-2 text-center font-work-sans text-3xl font-semibold text-white">Orelsan au festival Cocoon !</h3>
-      <p class="mt-5 mb-10 text-center font-work-sans text-[14px] text-white">
+      <p class="mt-5 mb-10 text-center font-work-sans text-white">
         Orelsan nous fait également l’honneur de revenir pour Cocoon 2022 ! C’est avec un grand plaisir que nous l’accueillons puisqu’il a
         préparé une surprise pour cette nouvelle participation...
       </p>

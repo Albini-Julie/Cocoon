@@ -8,7 +8,7 @@
     </div>
   </header>
   <h3 class="text-center font-work-sans text-3xl font-semibold">Qui sont les invités ?</h3>
-  <p class="mt-5 text-center font-work-sans text-[14px]">
+  <p class="mt-5 text-center font-work-sans">
     Plusieurs artistes nous ont fait l’honneur de venir pour cette nouvelle édition de Cocoon ! Première participation ou habitués,
     n’hésitez pas à cliquez sur les liens pour en apprendre plus !
   </p>

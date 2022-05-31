@@ -12,7 +12,7 @@
       <div class="flex flex-col">
         <img src="../../public/moyen-logo.svg" alt="Cocoon" />
         <h2 class="m- mt-5 font-work-sans text-2xl font-semibold">C’est quoi ?</h2>
-        <p class="mb-8 font-work-sans text-[14px]">
+        <p class="mb-8 font-work-sans">
           Cocoon est un festival d’un nouveau genre: dans ce festival il n’y a aucun artiste et aucun visiteur en présentiel. Les visiteurs
           ont accès depuis chez eux grâce à des casques de réalité virtuelle, à un monde virtuel dans lequel ils peuvent se rencontrer et
           voir le concert qui les intéresse parmi 20 choix dans le monde entier. Chaque soir, 20 nouveaux concerts !
@@ -30,7 +30,7 @@
           <img class="w-2/4" src="../../public/Vald/Vald.jpg" alt="image Vald" />
         </div>
       </div>
-      <p class="float-right mx-5 w-auto font-work-sans text-[14px]">
+      <p class="float-right mx-5 w-auto font-work-sans">
         Découvrez tous vos artistes et styles de musique préférés, du rock en passant par le rap sans oublier la pop, dans un univers
         métavers fantastique qui ne vous laissera pas sans souvenir ! Faites des économies d’argent et de temps en restant chez vous tout en
         profitant de vos hits !
