@@ -3,7 +3,7 @@
     <div class="md:hidden">
       <HeaderMobile />
     </div>
-    <div class="hidden md:block">
+    <div class="hidden md:block w-2/4">
       <HeaderOrdi />
     </div>
   </header>
@@ -13,9 +13,9 @@
     <img class="mt-10 w-2/4" src="../../public/grand-logo.svg" alt="logo Cocoon" />
   </div>
 
-  <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">Le concept</h4>
   <div class="mx-5 flex items-center">
     <div class="flex flex-col">
+      <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">Le concept</h4>
       <p class="ml-2 font-work-sans">
         Cocoon est un festival unique qui vous propose une expérience inédite : allez dans un monde virtuel pour voir vos artistes préférés
         en concert ! Plus besoin de vous déplacer, de trouver du temps pour vous rendre sur le lieu du concert, aujourd’hui c’est le concert
@@ -29,10 +29,10 @@
     <img class="ml-5 h-1/4 w-1/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
   </div>
 
-  <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
   <div class="mx-5 mt-5 flex items-center">
     <img class="mr-5 h-1/4 w-1/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
     <div class="flex flex-col">
+      <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
       <p class="mr-2 font-work-sans">
         Cocoon est né pour contrer l’effet destructeur du confinement sur le monde de la culture. En effet, le public étant bloqué chez lui,
         et vu la situation sanitaire de l’époque, toutes les représentations quelles qu’elles soient ne pouvaient avoir lieu.
@@ -72,7 +72,7 @@
     </div>
   </div>
 
-  <div class="m-32 mt-5 flex items-center">
+  <div class="m-auto mt-5 flex items-center">
     <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
     <div class="flex flex-col">
       <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
