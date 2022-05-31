@@ -26,12 +26,12 @@
         boutiques, salons de discussion, rediffusions et bien sûr des concerts ! Chaque jour, 20 nouveaux concerts du monde entier !
       </p>
     </div>
-    <img class="ml-5 h-1/4 w-2/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
+    <img class="w-/4 ml-5 h-1/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
   </div>
 
   <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
   <div class="mt-5 flex items-center">
-    <img class="mr-5 h-1/4 w-2/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
+    <img class="mr-5 h-1/4 w-1/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
     <div class="flex flex-col">
       <p class="mr-2 font-work-sans">
         Cocoon est né pour contrer l’effet destructeur du confinement sur le monde de la culture. En effet, le public étant bloqué chez lui,
@@ -48,26 +48,28 @@
   </div>
 
   <h3 class="mx-2 mt-5 text-center font-work-sans text-3xl font-semibold">Les avantages de Cocoon</h3>
-  <div class="ml-[5rem] mt-5 flex items-center">
-    <img class="mr-2" src="../../public/numero1.jpg" alt="numéro 1" />
-    <div class="flex flex-col">
-      <h4 class="work-sans ml-2 text-xl font-bold">Économie</h4>
-      <p class="mx-2 mt-5 font-work-sans">Avec Cocoon, pas de coûts de transport, de baby-sitting, ou de restauration sur place !</p>
-    </div>
-  </div>
-
-  <div class="mr-[5rem] mt-5 flex items-center">
-    <div class="flex flex-col">
-      <h4 class="work-sans ml-2 mb-5 text-xl font-bold">Gain de temps</h4>
+  <div class="flex flex-col items-center">
+    <div class="ml-[5rem] mt-5 flex items-center">
+      <img class="mr-2" src="../../public/numero1.jpg" alt="numéro 1" />
       <div class="flex flex-col">
-        <p class="font-work-sans">Pas de perte de temps sur les routes : mettez votre casque et l’expérience peut commencer !</p>
-        <p class="font-work-sans">
-          A la fin du spectacle : pas besoin de chercher sa voiture et d’entamer les bouchons : enlevez votre casque et vous êtes chez vous
-          !
-        </p>
+        <h4 class="work-sans ml-2 text-xl font-bold">Économie</h4>
+        <p class="mx-2 mt-5 font-work-sans">Avec Cocoon, pas de coûts de transport, de baby-sitting, ou de restauration sur place !</p>
       </div>
     </div>
-    <img class="mr-2 ml-2" src="../../public/numero2.jpg" alt="numéro 2" />
+
+    <div class="mr-[5rem] mt-5 flex items-center">
+      <div class="flex flex-col">
+        <h4 class="work-sans ml-2 mb-5 text-xl font-bold">Gain de temps</h4>
+        <div class="flex flex-col">
+          <p class="font-work-sans">Pas de perte de temps sur les routes : mettez votre casque et l’expérience peut commencer !</p>
+          <p class="font-work-sans">
+            A la fin du spectacle : pas besoin de chercher sa voiture et d’entamer les bouchons : enlevez votre casque et vous êtes chez
+            vous !
+          </p>
+        </div>
+      </div>
+      <img class="mr-2 ml-2" src="../../public/numero2.jpg" alt="numéro 2" />
+    </div>
   </div>
 
   <div class="ml-[5rem] mt-5 flex items-center">
