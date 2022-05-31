@@ -25,7 +25,7 @@
     <div class="flex items-center">
       <div class="mt-5 flex flex-col">
         <img class="" src="../../public/Indochine/Indochine_accueil.jpg" alt="image groupe Indochine" />
-        <div class="mt-5 flex items-center gap-6">
+        <div class="mt-5 flex items-center gap-2">
           <img class="w-2/4" src="../../public/AmelBent/Amel_Bent.jpg" alt="image Amel Bent" />
           <img class="w-2/4" src="../../public/Vald/Vald.jpg" alt="image Vald" />
         </div>
