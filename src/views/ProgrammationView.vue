@@ -3,7 +3,7 @@
     <div class="md:hidden">
       <HeaderMobile />
     </div>
-    <div class="hidden h-2/4 w-2/4 md:block">
+    <div class="hidden md:block">
       <HeaderOrdi />
     </div>
   </header>
