@@ -85,11 +85,14 @@
       </div>
     </form>
   </div>
+
+  <Footer class="mt-10" />
 </template>
 
 <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
 import HeaderOrdi from "../components/HeaderOrdi.vue";
+import Footer from "../components/Footer.vue";
 // Bibliothèque Firestore : import des fonctions
 import {
   getFirestore, // Obtenir le Firestore
@@ -117,6 +120,7 @@ export default {
   components: {
     HeaderMobile,
     HeaderOrdi,
+    Footer,
   },
   data() {
     return {
