@@ -86,7 +86,7 @@
     </form>
   </div>
 
-  <Footer class="mt-10" />
+  <Footer class="mt-32" />
 </template>
 
 <script>
