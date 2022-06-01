@@ -83,20 +83,19 @@
           src="../../public/Angèle/Angele_img9.jpg"
           class="object-cover"
         />
+      </div>
+      <div class="flex w-auto flex-col">
         <img src="../../public/Angèle/Angele_img8.jpg" class="object-cover" />
+        <img src="../../public/Angèle/Angele_img4.jpg" class="object-cover" />
       </div>
 
       <div class="flex w-auto flex-col">
-        <img src="../../public/Angèle/Angele_img4.jpg" class="object-cover" /><img
-          src="../../public/Angèle/Angele_img1.jpg"
-          class="object-cover"
-        />
+        <img src="../../public/Angèle/Angele_img1.jpg" class="object-cover" />
+        <img src="../../public/Angèle/Angele_regard.jpg" class="object-none" />
+      </div>
 
-        <img src="../../public/Angèle/Angele_regard.jpg" class="object-none" /><img
-          src="../../public/Angèle/Angele_img3.jpg"
-          class="object-cover"
-        />
-
+      <div class="flex w-auto flex-col">
+        <img src="../../public/Angèle/Angele_img3.jpg" class="object-cover" />
         <img src="../../public/Angèle/Angele_img6.jpg" class="object-none" />
       </div>
 
@@ -105,12 +104,16 @@
           src="../../public/Angèle/Angele_img12.jpg"
           class="object-cover"
         />
+      </div>
 
+      <div class="flex w-auto flex-col">
         <img src="../../public/Angèle/Angele_img10.jpg" class="object-cover" /><img
           src="../../public/Angèle/Angele_img11.jpg"
           class="object-cover"
         />
+      </div>
 
+      <div class="flex w-auto flex-col">
         <img src="../../public/Angèle/Angele_img13.jpg" class="object-cover" />
       </div>
     </div>
