@@ -28,7 +28,9 @@ const router = createRouter({
     { path: '/createArtiste', name: 'CreateArtiste', component: CreateArtiste },
     { path: '/updateArtiste', name: 'UpdateArtiste', component: UpdateArtiste },
     { path: '/deleteArtiste', name: 'DeleteArtiste', component: DeleteArtiste },
-    { path: '/404', name: 'Page404', component: Page404 },
+    { path: '/:catchAll(.*)', name: 'Page404', component: Page404 },
+
+    
     
     // ici les autre routes
   ]
