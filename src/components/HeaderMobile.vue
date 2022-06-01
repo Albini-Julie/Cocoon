@@ -8,7 +8,8 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'
+          $route.name === 'DeleteArtiste' ||
+          $route.name === 'Page404'
         "
         src="../../public/logomenu_blanc.svg"
         alt="logo Cocoon" />
@@ -22,7 +23,8 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'
+          $route.name === 'DeleteArtiste' ||
+          $route.name === 'Page404'
         "
         class="mx-5"
       />
@@ -39,7 +41,8 @@
       $route.name === 'Contact' ||
       $route.name === 'CreateArtiste' ||
       $route.name === 'UpdateArtiste' ||
-      $route.name === 'DeleteArtiste'
+      $route.name === 'DeleteArtiste' ||
+      $route.name === 'Page404'
         ? 'bg-gray-900 text-white'
         : 'bg-white text-black',
       menuOuvert ? 'translate-x-0' : '',

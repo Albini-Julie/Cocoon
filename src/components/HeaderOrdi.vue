@@ -8,7 +8,8 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'
+          $route.name === 'DeleteArtiste'||
+          $route.name === 'Page404'
         "
         src="../../public/LogoSimpleGrandBlanc.svg"
         alt="logo Cocoon" />
@@ -25,7 +26,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'
+              $route.name === 'DeleteArtiste'||
+          $route.name === 'Page404'
             "
           />
           <chevron v-else />
@@ -39,7 +41,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'
+              $route.name === 'DeleteArtiste'||
+          $route.name === 'Page404'
             "
           />
           <chevron v-else />
@@ -53,7 +56,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'
+              $route.name === 'DeleteArtiste'||
+          $route.name === 'Page404'
             "
           />
           <chevron v-else />
@@ -67,7 +71,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'
+              $route.name === 'DeleteArtiste'||
+          $route.name === 'Page404'
             "
           />
           <chevron v-else />

@@ -7,7 +7,8 @@
         $route.name === 'Contact' ||
         $route.name === 'CreateArtiste' ||
         $route.name === 'UpdateArtiste' ||
-        $route.name === 'DeleteArtiste'
+        $route.name === 'DeleteArtiste' ||
+        $route.name === 'Page404'
       "
       class="w-1/4"
       src="../../public/grandlogo_blanc.svg"
@@ -22,7 +23,8 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'
+          $route.name === 'DeleteArtiste' ||
+          $route.name === 'Page404'
         "
       />
       <logoInsta v-else />
@@ -33,7 +35,8 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'
+          $route.name === 'DeleteArtiste' ||
+          $route.name === 'Page404'
         "
       />
       <logoFacebook v-else />
@@ -44,7 +47,8 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'
+          $route.name === 'DeleteArtiste' ||
+          $route.name === 'Page404'
         "
       />
       <logoTwitter v-else />
