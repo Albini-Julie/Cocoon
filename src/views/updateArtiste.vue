@@ -15,8 +15,8 @@
         </div>
 
         <div>
-          <div class="flex">
-            <div class="flex items-center">
+          <div class="md:flex">
+            <div class="flex md:items-center">
               <div class="ml-5 w-3/4">
                 <img class="preview img-fluid" :src="imageData" />
               </div>
@@ -79,8 +79,10 @@
         </div>
 
         <div class="mt-5 flex justify-around">
-          <button class="form-control font-work-sans text-[20px] font-semibold text-white" type="submit">Modifier</button>
-          <button class="form-control font-work-sans text-[20px] font-semibold text-white">
+          <button class="form-control rounded-xl bg-purple-700 p-2 font-work-sans text-[20px] font-semibold text-white" type="submit">
+            Modifier
+          </button>
+          <button class="form-control rounded-xl bg-green-700 p-2 font-work-sans text-[20px] font-semibold text-white">
             <RouterLink to="/Artistes">Cancel</RouterLink>
           </button>
         </div>
