@@ -21,25 +21,25 @@
         <input
           type="text"
           v-model="concert.artiste"
-          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white"
+          class="form-control w-fit flex-auto grow border-b-2 border-b-gray-900 bg-white dark:border-b-white dark:bg-black"
           placeholder="Artiste"
           required
         />
         <input
           type="text"
           v-model="concert.date"
-          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white"
+          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white dark:border-b-white dark:bg-black"
           placeholder="Date"
           required
         />
         <input
           type="text"
           v-model="concert.type"
-          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white"
+          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white dark:border-b-white dark:bg-black"
           placeholder="Genre"
           required
         />
-        <button type="button" @click="createConcert()" title="Création"><Plus /></button>
+        <button class="m-5 dark:bg-white" type="button" @click="createConcert()" title="Création"><Plus /></button>
       </div>
     </form>
 
@@ -56,13 +56,13 @@
         <tbody>
           <tr v-for="conc in listeConcerts" :key="conc.id">
             <td class="text-center">
-              <input type="text" v-model="conc.artiste" required />
+              <input class="dark:border-b-white dark:bg-black" type="text" v-model="conc.artiste" required />
             </td>
             <td class="text-center">
-              <input type="text" v-model="conc.date" required />
+              <input class="dark:border-b-white dark:bg-black" type="text" v-model="conc.date" required />
             </td>
             <td class="text-center">
-              <input type="text" v-model="conc.type" required />
+              <input class="dark:border-b-white dark:bg-black" type="text" v-model="conc.type" required />
             </td>
             <td class="flex items-center justify-center">
               <span title="Modifier l'artiste" class="mr-2">
@@ -72,12 +72,12 @@
                                 et sa valeur (part.id, id du participant) 
                                 -->
                 <button type="button" @click="updateConcert(conc)" title="Modification">
-                  <crayon />
+                  <crayon class="dark:bg-white" />
                 </button>
               </span>
               <span title="Supprimer le participant" class="mr-2">
                 <button type="button" @click="deleteConcert(conc)" title="Suppression">
-                  <Poubelle />
+                  <Poubelle class="dark:bg-white" />
                 </button>
               </span>
             </td>
