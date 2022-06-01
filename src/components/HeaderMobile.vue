@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 flex flex-wrap justify-between">
+  <div class="m-5 mb-5 flex flex-wrap justify-between">
     <router-link to="/">
       <img
         v-if="
@@ -56,7 +56,6 @@
           <li class="mt-5"><router-link to="/Festival">Festival</router-link></li>
           <div class="mt-5 flex flex-wrap items-center gap-2">
             <li><router-link to="/Contact">Contact</router-link></li>
-            <chevronbas />
           </div>
         </div>
       </ul>
