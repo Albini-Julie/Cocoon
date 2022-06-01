@@ -12,8 +12,15 @@
       <h3 class="mx-2 mb-10 text-center font-work-sans text-3xl font-semibold text-white">Angèle</h3>
     </div>
 
-    <div class="flex items-center">
-      <div class="flex h-2/4 w-2/4 flex-col">
+    <div class="items-center md:flex">
+      <div class="m-auto flex h-2/4 w-2/4 flex-col items-center">
+        <img src="../../public/Angèle/bulle1.png" alt="concert Angèle" />
+        <div class="flex">
+          <img class="w-2/4" src="../../public/Angèle/bulle2.png" alt="Angèle" />
+          <img class="w-2/4" src="../../public/Angèle/bulle3.png" alt="Angèle chanteuse" />
+        </div>
+      </div>
+      <div class="flex flex-col">
         <h4 class="ml-2 font-work-sans text-[20px] font-semibold text-white">Présentation</h4>
         <p class="ml-2 font-work-sans text-white">
           Angèle est une autrice, compositrice, interprète, productrice, actrice et mannequin belge. De son vrai nom Angèle Van Laeken, la
@@ -30,18 +37,11 @@
           </div>
         </div>
       </div>
-      <div class="m-auto flex h-2/4 w-2/4 flex-col items-center">
-        <img src="../../public/Angèle/bulle1.png" alt="concert Angèle" />
-        <div class="flex">
-          <img class="w-2/4" src="../../public/Angèle/bulle2.png" alt="Angèle" />
-          <img class="w-2/4" src="../../public/Angèle/bulle3.png" alt="Angèle chanteuse" />
-        </div>
-      </div>
     </div>
 
-    <div class="mt-10 flex items-center">
-      <img class="h-1/4 w-1/4" src="../../public/Angèle/Angele_RomeoElvis.jpg" alt="Angèle et Roméo Elvis" />
-      <p class="m-auto w-2/4 font-work-sans text-white">
+    <div class="mt-10 items-center md:flex">
+      <img class="m-auto max-w-[50%]" src="../../public/Angèle/Angele_RomeoElvis.jpg" alt="Angèle et Roméo Elvis" />
+      <p class="text-center font-work-sans text-white">
         Elle entame de 2018 à 2020 une tournée pour son album Briol, ce qui lui rapportera la Victoire de la musique du concert de l’année
         en 2020. Elle sort ensuite en 2021 un nouvel album : Nonante-cinq. Elle a également un frère, Roméo Elvis, avec qui elle est très
         proche. Elle a fait de nombreux feat, avec Dua Lipa et Damso notamment.
@@ -58,7 +58,7 @@
       luttent contre les violences faites aux femmes.
     </p>
     <br />
-    <div class="flex items-center">
+    <div class="items-center md:flex">
       <div class="w-7/10 flex flex-col">
         <p class="m-5 font-work-sans text-white">
           C’est la cause LGBT qu’elle soutient cette fois dans la chanson Ta reine. En effet, en tant que bisexuelle, Angèle est très
@@ -69,7 +69,7 @@
           réchauffement climatique appelée Il sera trop tard.
         </p>
       </div>
-      <img class="h-1/5 w-1/5" src="../../public/Angèle/Angele_lgbt.jpg" alt="Angèle concert" />
+      <img class="m-auto max-w-[50%]" src="../../public/Angèle/Angele_lgbt.jpg" alt="Angèle concert" />
     </div>
 
     <h4 class="my-10 ml-2 text-center font-work-sans font-semibold text-white">

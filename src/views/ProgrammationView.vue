@@ -17,25 +17,25 @@
     <h4 class="my-8 text-center font-work-sans text-2xl font-bold">Liste des concerts de Cocoon</h4>
     <form class="ml-5">
       <h4 class="mb-10 font-work-sans font-semibold">Nouveau concert</h4>
-      <div class="flex gap-16">
+      <div class="flex flex-col gap-16 sm:flex-row">
         <input
           type="text"
           v-model="concert.artiste"
-          class="form-control border-b-2 border-white border-b-gray-900 bg-white"
+          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white"
           placeholder="Artiste"
           required
         />
         <input
           type="text"
           v-model="concert.date"
-          class="form-control border-b-2 border-white border-b-gray-900 bg-white"
+          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white"
           placeholder="Date"
           required
         />
         <input
           type="text"
           v-model="concert.type"
-          class="form-control border-b-2 border-white border-b-gray-900 bg-white"
+          class="form-control w-fit flex-auto grow border-b-2 border-white border-b-gray-900 bg-white"
           placeholder="Genre"
           required
         />
@@ -47,18 +47,40 @@
       <table class="mt-10 w-full">
         <thead>
           <tr>
-            <th scope="col" class="w-1/3">Artiste</th>
-            <th scope="col" class="w-1/3">Date</th>
-            <th scope="col" class="w-1/3">Genre</th>
+            <th scope="col" class="w-1/4">Artiste</th>
+            <th scope="col" class="w-1/4">Date</th>
+            <th scope="col" class="w-1/4">Genre</th>
+            <th scope="col" class="w-1/4">Action</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="conc in listeConcerts" :key="conc.id">
             <td class="text-center">
-              {{ conc.artiste }}
+              <input type="text" v-model="conc.artiste" required />
             </td>
-            <td class="text-center">{{ conc.date }}</td>
-            <td class="text-center">{{ conc.type }}</td>
+            <td class="text-center">
+              <input type="text" v-model="conc.date" required />
+            </td>
+            <td class="text-center">
+              <input type="text" v-model="conc.type" required />
+            </td>
+            <td class="flex items-center justify-center">
+              <span title="Modifier l'artiste" class="mr-2">
+                <!-- Pour passer un paramètre dans la navigation :
+                                On utilise le nom de la route
+                                l'attribut params, permet de préciser le nom du paramètre (id) 
+                                et sa valeur (part.id, id du participant) 
+                                -->
+                <button type="button" @click="updateConcert(conc)" title="Modification">
+                  <crayon />
+                </button>
+              </span>
+              <span title="Supprimer le participant" class="mr-2">
+                <button type="button" @click="deleteConcert(conc)" title="Suppression">
+                  <Poubelle />
+                </button>
+              </span>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -128,12 +150,17 @@ import card from "../components/cardConcert.vue";
 import Footer from "../components/Footer.vue";
 import HeaderOrdi from "../components/HeaderOrdi.vue";
 import Plus from "../components/icons/plus.vue";
+import crayon from "../components/icons/crayon.vue";
+import Poubelle from "../components/icons/poubelle.vue";
 
 import {
   getFirestore, // Obtenir le Firestore
   collection, // Utiliser une collection de documents
   onSnapshot,
-  addDoc, // Demander une liste de documents d'une collection, en les synchronisant
+  addDoc,
+  doc,
+  updateDoc,
+  deleteDoc, // Demander une liste de documents d'une collection, en les synchronisant
   query, // Permet d'effectuer des requêtes sur Firestore
   orderBy, // Permet de demander le tri d'une requête query
 } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
@@ -152,6 +179,8 @@ export default {
     Footer,
     HeaderOrdi,
     Plus,
+    crayon,
+    Poubelle,
   },
   data() {
     return {
@@ -183,7 +212,6 @@ export default {
       });
     },
     async createConcert() {
-      console.log("coucou");
       // Obtenir Firestore
       const firestore = getFirestore();
       // Base de données (collection)  document pays
@@ -194,6 +222,31 @@ export default {
       console.log("Concert", this.concert);
       const docRef = await addDoc(dbConcert, this.concert);
       console.log("document créé avec le id : ", docRef.id);
+    },
+
+    async updateConcert(conc) {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document pays
+      // Reference du pays à modifier
+      const docRef = doc(firestore, "Concert", conc.id);
+      // On passe en paramètre format json
+      // Les champs à mettre à jour
+      await updateDoc(docRef, {
+        artiste: conc.artiste,
+        date: conc.date,
+        genre: conc.type,
+      });
+    },
+
+    async deleteConcert(conc) {
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document pays
+      // Reference du pays à supprimer
+      const docRef = doc(firestore, "Concert", conc.id);
+      // Suppression du pays référencé
+      await deleteDoc(docRef);
     },
   },
 };

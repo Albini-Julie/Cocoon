@@ -15,7 +15,7 @@
       <img class="mt-10 hidden w-2/4 dark:inline-block" src="../../public/grandlogo_blanc.svg" alt="logo Cocoon" />
     </div>
 
-    <div class="mx-5 flex items-center">
+    <div class="mx-5 sm:flex sm:items-center">
       <div class="flex flex-col">
         <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">Le concept</h4>
         <p class="ml-2 font-work-sans">
@@ -28,18 +28,18 @@
           : boutiques, salons de discussion, rediffusions et bien sûr des concerts ! Chaque jour, 20 nouveaux concerts du monde entier !
         </p>
       </div>
-      <img class="ml-5 h-1/4 w-1/4" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
+      <img class="mx-auto" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
     </div>
 
-    <div class="mx-5 mt-5 flex items-center">
-      <img class="mr-5 h-1/4 w-1/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
+    <div class="mx-5 mt-5 sm:flex sm:items-center">
+      <img class="mx-auto h-1/4 w-1/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
       <div class="flex flex-col">
         <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
-        <p class="mr-2 font-work-sans">
+        <p class="mx-2 font-work-sans">
           Cocoon est né pour contrer l’effet destructeur du confinement sur le monde de la culture. En effet, le public étant bloqué chez
           lui, et vu la situation sanitaire de l’époque, toutes les représentations quelles qu’elles soient ne pouvaient avoir lieu.
         </p>
-        <p class="mr-2 font-work-sans">
+        <p class="mx-2 font-work-sans">
           Cocoon a donc voulu permettre de mettre en lien les artistes et leur public dans un monde à part pour les faire se retrouver.
         </p>
         <p class="mx-2 mt-5 font-work-sans">
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <div class="m-20 mt-5 flex items-center">
+    <div class="mt-5 flex items-center">
       <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
       <div class="flex flex-col">
         <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
