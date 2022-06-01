@@ -77,8 +77,10 @@
         </div>
 
         <div class="mt-5 flex justify-around">
-          <button type="submit" class="form-control font-work-sans text-[20px] font-semibold text-white">Créer</button>
-          <button class="form-control font-work-sans text-[20px] font-semibold text-white">
+          <button type="submit" class="form-control rounded-xl bg-purple-700 p-2 font-work-sans text-[20px] font-semibold text-white">
+            Créer
+          </button>
+          <button class="form-control rounded-xl bg-green-700 p-2 font-work-sans text-[20px] font-semibold text-white">
             <router-link to="/Artistes">Cancel</router-link>
           </button>
         </div>

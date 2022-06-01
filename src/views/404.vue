@@ -1,5 +1,5 @@
 <template>
-  <main class="-mt-5">
+  <main class="-mt-5 dark:bg-black dark:text-white">
     <header class="mb-16">
       <div class="md:hidden"><Header /></div>
       <div class="hidden md:block">
@@ -19,7 +19,7 @@
 
     <form class="flex justify-center gap-10" action="https://duckduckgo.com/" method="GET" x-data="{ q:'', }" x-on:submit="q = q'">
       <input
-        class="border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+        class="border-b-2 border-gray-900 border-b-white bg-gray-900 text-white dark:bg-black"
         placeholder="Votre recherche"
         type="text"
         id="q"
@@ -34,7 +34,7 @@
       <router-link to="/" class="mt-5 ml-5 font-work-sans text-lg font-medium">Accueil</router-link>
       <div class="flex">
         <router-link to="/Artistes" class="mt-5 ml-5 font-work-sans text-lg font-medium">Artistes</router-link>
-        <chevron  />
+        <chevron />
         <router-link to="/Artiste" class="mt-5 ml-5 font-work-sans text-lg font-medium">Artiste</router-link>
       </div>
       <router-link to="/Concert" class="mt-5 ml-5 font-work-sans text-lg font-medium">Concert</router-link>
