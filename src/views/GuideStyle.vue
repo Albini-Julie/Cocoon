@@ -143,18 +143,22 @@
     <div class="flex flex-col">
       <p class="font-work-sans font-semibold">Body</p>
       <p class="font-work-sans">Work Sans (Regular)</p>
-      <p class="font-work-sans">14px</p>
+      <p class="font-work-sans">16px</p>
     </div>
     <p class="ml-40 font-work-sans text-[14px]">Le festival Cocoon</p>
   </div>
 
-  <h2 class="mx-5 mt-10 mb-5 font-work-sans font-semibold">Composants</h2>
-  <HeaderMobile />
-  <HeaderOrdi />
-  <Footer />
-  <div class="m- ml-5 flex gap-10">
+  <h2 class="mx-5 mt-10 mb-10 font-work-sans font-semibold">Composants</h2>
+  <HeaderMobile class="mb-10" />
+  <HeaderOrdi class="mb-10" />
+  <Footer class="mb-10" />
+  <div class="ml-5 mb-10 flex justify-around gap-10">
     <bouton>En savoir plus</bouton>
     <boutonblanc>En savoir plus</boutonblanc>
+  </div>
+  <div class="mb-10 flex justify-around gap-20">
+    <CardArtiste />
+    <CardConcert />
   </div>
 </template>
 
@@ -170,6 +174,8 @@ import HeaderOrdi from "../components/HeaderOrdi.vue";
 import Footer from "../components/Footer.vue";
 import bouton from "../components/bouton.vue";
 import boutonblanc from "../components/bouton_blanc.vue";
+import CardArtiste from "../components/cardArtiste.vue";
+import CardConcert from "../components/cardConcert.vue";
 
 export default {
   components: {
@@ -184,6 +190,8 @@ export default {
     Footer,
     bouton,
     boutonblanc,
+    CardArtiste,
+    CardConcert,
   },
 };
 </script>
