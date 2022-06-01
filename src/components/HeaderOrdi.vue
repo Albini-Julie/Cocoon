@@ -8,7 +8,7 @@
           $route.name === 'Contact' ||
           $route.name === 'CreateArtiste' ||
           $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste'||
+          $route.name === 'DeleteArtiste' ||
           $route.name === 'Page404'
         "
         src="../../public/LogoSimpleGrandBlanc.svg"
@@ -20,14 +20,15 @@
         <div class="flex gap-2">
           <li><router-link to="/Programmation">Programmation</router-link></li>
           <chevronBlanc
+            class=""
             v-if="
               $route.name === 'Artiste' ||
               $route.name === 'Concert' ||
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'||
-          $route.name === 'Page404'
+              $route.name === 'DeleteArtiste' ||
+              $route.name === 'Page404'
             "
           />
           <chevron v-else />
@@ -41,8 +42,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'||
-          $route.name === 'Page404'
+              $route.name === 'DeleteArtiste' ||
+              $route.name === 'Page404'
             "
           />
           <chevron v-else />
@@ -56,8 +57,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'||
-          $route.name === 'Page404'
+              $route.name === 'DeleteArtiste' ||
+              $route.name === 'Page404'
             "
           />
           <chevron v-else />
@@ -71,8 +72,8 @@
               $route.name === 'Contact' ||
               $route.name === 'CreateArtiste' ||
               $route.name === 'UpdateArtiste' ||
-              $route.name === 'DeleteArtiste'||
-          $route.name === 'Page404'
+              $route.name === 'DeleteArtiste' ||
+              $route.name === 'Page404'
             "
           />
           <chevron v-else />
