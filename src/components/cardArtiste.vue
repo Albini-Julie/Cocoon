@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5 flex flex-col items-center">
-    <img class="h-2/4 w-2/4 rounded-xl" :src="image" alt="image concert" />
+    <img class="h-2/4 w-2/4 rounded-xl" :src="image" alt="image de l'artiste" />
     <h4 class="mt-5 font-work-sans font-semibold">{{ titre }}</h4>
     <p class="m-2 font-work-sans text-blue-700">{{ genre }}</p>
     <p class="mx-5 mt-5 text-center font-work-sans">{{ presentation }}</p>
