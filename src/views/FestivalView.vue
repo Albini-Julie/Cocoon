@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <div class="mt-5 flex items-center">
+    <div class="mx-auto mt-5 flex items-center">
       <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
       <div class="flex flex-col">
         <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
