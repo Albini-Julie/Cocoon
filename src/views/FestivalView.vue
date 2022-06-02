@@ -73,7 +73,7 @@
         <img class="mr-2 ml-2" src="../../public/numero2.jpg" alt="numéro 2" />
       </div>
 
-      <div class="mx-auto mt-5 flex items-center">
+      <div class="mx-auto my-5 flex items-center">
         <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
         <div class="flex flex-col">
           <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
