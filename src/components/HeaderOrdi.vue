@@ -1,5 +1,5 @@
 <template>
-  <div class="m-5 flex items-center gap-10">
+  <div class="passage m-5 flex items-center gap-10">
     <router-link to="/">
       <img
         v-if="
@@ -95,3 +95,18 @@ export default {
   },
 };
 </script>
+
+<style >
+.passage {
+  animation: pass 2s ease 0s 1 normal forwards;
+}
+
+@keyframes pass {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+</style>
