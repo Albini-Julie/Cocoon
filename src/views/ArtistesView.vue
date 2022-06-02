@@ -70,7 +70,7 @@
 
     <img class="mt-10 dark:bg-white" src="../../public/artistes_solos.svg" alt="artistes solos" />
     <card
-      image="/AmelBent/AmelBent_artiste.webp"
+      image="/AmelBent/AmelBent_artiste.jpg"
       titre="Amel Bent"
       genre="Pop"
       presentation="Amel Bent est une chanteuse et actrice française de 36 ans. Née dans l’Indre et Loire, c’est sa prestation en 2004 à la saison 2 de Nouvelle Star qui l’a révélée."
@@ -94,7 +94,7 @@
 
     <card
       class="mt-12"
-      image="/Orelsan/Orelsan_artiste.webp"
+      image="/Orelsan/Orelsan_artiste.jpg"
       titre="Orelsan"
       genre="Rap"
       presentation="Orelsan est un chanteur, rappeur et compositeur français de 39 ans qui a marqué sans aucun doute le rap français. Il se distingue par son originalité et sa capacité à nous faire réfléchir dans ses musiques."

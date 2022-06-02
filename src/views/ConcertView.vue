@@ -50,7 +50,7 @@
 
       <div class="flex w-auto flex-col">
         <img src="../../public/Orelsan/O_img1.jpg" class="object-cover" /><img
-          src="../../public/Orelsan/O_img2.webp"
+          src="../../public/Orelsan/O_img2.jpg"
           class="object-cover"
         />
       </div>

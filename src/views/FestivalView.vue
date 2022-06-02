@@ -32,7 +32,7 @@
     </div>
 
     <div class="mx-5 mt-5 sm:flex sm:items-center">
-      <img class="mx-auto h-1/4 w-1/4" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
+      <img class="mx-auto" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
       <div class="flex flex-col">
         <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
         <p class="mx-2 font-work-sans">

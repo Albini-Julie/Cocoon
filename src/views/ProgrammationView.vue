@@ -108,7 +108,7 @@ virtuelle ! "
 
     <card
       class="mt-12"
-      image="/AmelBent/AmelBent_concert.webp"
+      image="/AmelBent/AmelBent_concert.jpg"
       titre="Concert : Amel Bent"
       genre="Pop"
       presentation="Amel Bent sera en concert à Cocoon pour nous chanter ses magnifiques musiques qui ont fait danser toutes les générations"
