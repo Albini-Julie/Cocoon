@@ -10,11 +10,11 @@
         $route.name === 'DeleteArtiste' ||
         $route.name === 'Page404'
       "
-      class="w-1/4"
+      class="mx-5"
       src="../../public/grandlogo_blanc.svg"
       alt="image logo Cocoon"
     />
-    <img v-else class="w-1/4" src="../../public/grand-logo.svg" alt="image logo Cocoon" />
+    <img v-else src="../../public/grand-logo.svg" alt="image logo Cocoon" />
     <div class="mt-12 flex flex-wrap gap-20">
       <logoInstaBlanc
         v-if="
