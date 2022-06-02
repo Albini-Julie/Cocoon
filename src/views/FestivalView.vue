@@ -72,16 +72,16 @@
         </div>
         <img class="mr-2 ml-2" src="../../public/numero2.jpg" alt="numéro 2" />
       </div>
-    </div>
 
-    <div class="mx-auto mt-5 flex items-center">
-      <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
-      <div class="flex flex-col">
-        <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
-        <p class="mx-2 mt-5 font-work-sans">
-          Grâce à Cocoon, rencontrez des gens qui partagent la même passion que vous plus facilement : les avatars vous rendent anonymes et
-          vous permettent donc de plus facilement rentrer en contact avec autrui !
-        </p>
+      <div class="mx-auto mt-5 flex items-center">
+        <img class="mr-2" src="../../public/numero3.jpg" alt="numéro 3" />
+        <div class="flex flex-col">
+          <h4 class="work-sans ml-2 text-xl font-bold">Social</h4>
+          <p class="mx-2 mt-5 font-work-sans">
+            Grâce à Cocoon, rencontrez des gens qui partagent la même passion que vous plus facilement : les avatars vous rendent anonymes
+            et vous permettent donc de plus facilement rentrer en contact avec autrui !
+          </p>
+        </div>
       </div>
     </div>
 
