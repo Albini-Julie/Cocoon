@@ -14,7 +14,7 @@
           <h4 class="mx-auto mb-10 font-work-sans font-semibold">Mise à jour artiste</h4>
         </div>
 
-        <div>
+        <div class="">
           <div class="md:flex">
             <div class="flex md:items-center">
               <div class="ml-5 w-3/4">
@@ -22,13 +22,13 @@
               </div>
             </div>
 
-            <div class="flex w-2/4 flex-col items-center">
+            <div class="flex flex-col items-center md:w-2/4">
               <div>
                 <div class="font-work-sans text-[20px] font-semibold text-white">
                   <span>Surnom</span>
                 </div>
                 <input
-                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                   placeholder="Surnom de l'artiste"
                   v-model="artiste.surnom"
                   required
@@ -40,7 +40,7 @@
                   <span>Date de naissance</span>
                 </div>
                 <input
-                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                   placeholder="Date de naissance de l'artiste"
                   v-model="artiste.date_naissance"
                   required
@@ -48,12 +48,12 @@
               </div>
               <br />
               <div>
-                <div class="font-work-sans text-[20px] font-semibold text-white">
+                <div class="font-work-sans text-[20px] font-semibold text-white md:w-[500px]">
                   <span>Photo</span>
                 </div>
                 <div>
                   <input
-                    class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                    class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                     type="file"
                     ref="file"
                     id="file"
@@ -68,7 +68,7 @@
                 </div>
                 <input
                   placeholder="Genre de musique"
-                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                   required
                   v-model="artiste.type"
                 />
