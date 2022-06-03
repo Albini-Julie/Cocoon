@@ -149,13 +149,18 @@
   </div>
 
   <h2 class="mx-5 mt-10 mb-10 font-work-sans font-semibold">Composants</h2>
+  <h3 class="mx-5 mt-10 mb-10 font-work-sans text-sm font-semibold">Header mobile</h3>
   <HeaderMobile class="mb-10" />
+  <h3 class="mx-5 mt-10 mb-10 font-work-sans text-sm font-semibold">Header ordi</h3>
   <HeaderOrdi class="mb-10" />
+  <h3 class="mx-5 mt-10 mb-10 font-work-sans text-sm font-semibold">Footer</h3>
   <Footer class="mb-10" />
+  <h3 class="mx-5 mt-10 mb-10 font-work-sans text-sm font-semibold">Boutons</h3>
   <div class="ml-5 mb-10 flex justify-around gap-10">
     <bouton>En savoir plus</bouton>
     <boutonblanc>En savoir plus</boutonblanc>
   </div>
+  <h3 class="mx-5 mt-10 mb-10 font-work-sans text-sm font-semibold">Cartes</h3>
   <div class="mb-10 flex justify-around gap-20">
     <CardArtiste />
     <CardConcert />
