@@ -15,20 +15,20 @@
         </div>
 
         <div>
-          <div class="flex">
-            <div class="flex items-center">
+          <div class="md:flex">
+            <div class="flex md:items-center">
               <div class="ml-5 w-3/4">
                 <img class="preview img-fluid" :src="photoActuelle" />
               </div>
             </div>
 
-            <div class="flex w-2/4 flex-col items-center">
+            <div class="flex flex-col items-center md:w-2/4">
               <div>
                 <div class="font-work-sans text-[20px] font-semibold text-white">
                   <span>Surnom</span>
                 </div>
                 <input
-                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                   placeholder="Surnom de l'artiste"
                   v-model="artiste.surnom"
                   disabled
@@ -40,7 +40,7 @@
                   <span>Date de naissaance</span>
                 </div>
                 <input
-                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                   placeholder="Genre de musique"
                   v-model="artiste.date_naissance"
                   disabled
@@ -52,7 +52,7 @@
                   <span>Genre</span>
                 </div>
                 <input
-                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white"
+                  class="form-control border-b-2 border-gray-900 border-b-white bg-gray-900 text-white lg:w-[500px]"
                   v-model="artiste.type"
                   disabled
                 />
@@ -79,11 +79,13 @@
       </div>
     </form>
   </div>
+  <Footer class="mt-10" />
 </template>
 
 <script>
 import HeaderMobile from "../components/HeaderMobile.vue";
 import HeaderOrdi from "../components/HeaderOrdi.vue";
+import Footer from "../components/Footer.vue";
 // Bibliothèque Firestore : import des fonctions
 import { getFirestore, doc, getDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js";
 
@@ -95,6 +97,7 @@ export default {
   components: {
     HeaderMobile,
     HeaderOrdi,
+    Footer,
   },
   data() {
     return {
