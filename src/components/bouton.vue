@@ -1,6 +1,6 @@
 <template>
-  <div class="anime flex gap-2 rounded-lg bg-indigo-800 p-5">
-    <span class="font-work-sans font-semibold text-white"><slot /></span>
+  <div class="anime flex items-center gap-2 rounded-lg bg-indigo-800 p-5">
+    <span class="font-work-sans text-2xl font-semibold text-white"><slot /></span>
     <flechedroite />
   </div>
 </template>
