@@ -46,7 +46,7 @@
             </td>
             <td class="text-center">{{ art.date_naissance }}</td>
             <td class="text-center">{{ art.type }}</td>
-            <td class="flex items-center justify-center">
+            <td class="text-center">
               <span title="Modifier l'artiste" class="mr-2">
                 <!-- Pour passer un paramètre dans la navigation :
                                 On utilise le nom de la route
@@ -54,12 +54,12 @@
                                 et sa valeur (part.id, id du participant) 
                                 -->
                 <RouterLink :to="{ name: 'UpdateArtiste', params: { id: art.id } }">
-                  <crayon class="dark:bg-white" />
+                  <crayon class="inline-block dark:bg-white" />
                 </RouterLink>
               </span>
               <span title="Supprimer le participant" class="mr-2">
                 <RouterLink :to="{ name: 'DeleteArtiste', params: { id: art.id } }">
-                  <Poubelle class="dark:bg-white" />
+                  <Poubelle class="inline-block dark:bg-white" />
                 </RouterLink>
               </span>
             </td>
