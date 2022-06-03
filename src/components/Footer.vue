@@ -16,42 +16,45 @@
     />
     <img v-else src="../../public/grand-logo.svg" alt="image logo Cocoon" />
     <div class="mt-12 flex flex-wrap gap-20">
-      <logoInstaBlanc
-        v-if="
-          $route.name === 'Artiste' ||
-          $route.name === 'Concert' ||
-          $route.name === 'Contact' ||
-          $route.name === 'CreateArtiste' ||
-          $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste' ||
-          $route.name === 'Page404'
-        "
-      />
-      <logoInsta v-else />
-      <logoFacebookBlanc
-        v-if="
-          $route.name === 'Artiste' ||
-          $route.name === 'Concert' ||
-          $route.name === 'Contact' ||
-          $route.name === 'CreateArtiste' ||
-          $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste' ||
-          $route.name === 'Page404'
-        "
-      />
-      <logoFacebook v-else />
-      <logoTwitterBlanc
-        v-if="
-          $route.name === 'Artiste' ||
-          $route.name === 'Concert' ||
-          $route.name === 'Contact' ||
-          $route.name === 'CreateArtiste' ||
-          $route.name === 'UpdateArtiste' ||
-          $route.name === 'DeleteArtiste' ||
-          $route.name === 'Page404'
-        "
-      />
-      <logoTwitter v-else />
+      <a href="https://www.instagram.com/">
+        <logoInstaBlanc
+          v-if="
+            $route.name === 'Artiste' ||
+            $route.name === 'Concert' ||
+            $route.name === 'Contact' ||
+            $route.name === 'CreateArtiste' ||
+            $route.name === 'UpdateArtiste' ||
+            $route.name === 'DeleteArtiste' ||
+            $route.name === 'Page404'
+          " />
+        <logoInsta v-else
+      /></a>
+      <a href="https://twitter.com/?lang=fr"
+        ><logoTwitterBlanc
+          v-if="
+            $route.name === 'Artiste' ||
+            $route.name === 'Concert' ||
+            $route.name === 'Contact' ||
+            $route.name === 'CreateArtiste' ||
+            $route.name === 'UpdateArtiste' ||
+            $route.name === 'DeleteArtiste' ||
+            $route.name === 'Page404'
+          " />
+        <logoTwitter v-else
+      /></a>
+      <a href="https://www.facebook.com/"
+        ><logoFacebookBlanc
+          v-if="
+            $route.name === 'Artiste' ||
+            $route.name === 'Concert' ||
+            $route.name === 'Contact' ||
+            $route.name === 'CreateArtiste' ||
+            $route.name === 'UpdateArtiste' ||
+            $route.name === 'DeleteArtiste' ||
+            $route.name === 'Page404'
+          " />
+        <logoFacebook v-else
+      /></a>
     </div>
     <router-link class="mt-10 font-work-sans font-semibold" to="MentionsLegales">Mentions Légales</router-link>
   </div>

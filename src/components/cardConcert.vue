@@ -5,9 +5,9 @@
     <p class="m-2 font-work-sans text-blue-700">{{ genre }}</p>
     <p class="mx-5 mt-5 text-center font-work-sans">{{ presentation }}</p>
     <div class="mt-8 flex gap-12">
-      <logoInsta />
-      <logoFacebook />
-      <logoTwitter />
+      <a href="https://www.instagram.com/"><logoInsta /></a>
+      <a href="https://twitter.com/?lang=fr"><logoTwitter /></a>
+      <a href="https://www.facebook.com/"><logoFacebook /></a>
     </div>
     <router-link to="/Concert" class="block"><bouton-blanc class="mt-10 w-max">En savoir plus</bouton-blanc></router-link>
   </div>
