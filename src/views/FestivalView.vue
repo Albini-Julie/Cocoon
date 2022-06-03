@@ -28,21 +28,21 @@
           : boutiques, salons de discussion, rediffusions et bien sûr des concerts ! Chaque jour, 20 nouveaux concerts du monde entier !
         </p>
       </div>
-      <img class="mx-auto" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
+      <img class="mx-auto mt-5" src="../../public/Libre_Droit/joueuse.jpg" alt="utilisatrice casque de réalité virtuelle" />
     </div>
 
     <div class="mx-5 mt-5 sm:flex sm:items-center">
       <img class="mx-auto" src="../../public/Libre_Droit/3d.jpg" alt="utilisatrice casque de réalité virtuelle" />
       <div class="flex flex-col">
-        <h4 class="work-sans mt-16 mb-2 ml-2 text-xl font-bold">L’histoire du projet</h4>
-        <p class="mx-2 font-work-sans">
+        <h4 class="work-sans mt-16 mb-2 ml-5 text-xl font-bold">L’histoire du projet</h4>
+        <p class="mx-5 font-work-sans">
           Cocoon est né pour contrer l’effet destructeur du confinement sur le monde de la culture. En effet, le public étant bloqué chez
           lui, et vu la situation sanitaire de l’époque, toutes les représentations quelles qu’elles soient ne pouvaient avoir lieu.
         </p>
-        <p class="mx-2 font-work-sans">
+        <p class="mx-5 font-work-sans">
           Cocoon a donc voulu permettre de mettre en lien les artistes et leur public dans un monde à part pour les faire se retrouver.
         </p>
-        <p class="mx-2 mt-5 font-work-sans">
+        <p class="mx-5 mt-5 font-work-sans">
           Suite à l’engouement du public pour la première édition du concept de Cocoon, le projet a continué d’évoluer avec une édition 2,
           puis 3.
         </p>
